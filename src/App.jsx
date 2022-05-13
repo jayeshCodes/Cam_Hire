@@ -10,7 +10,6 @@ import { Footer } from './components/footer'
 import {Contact} from './components/contact'
 import KnowMore    from './components/knowmore.jsx'
 import {Photographers} from './components/photographers'
-import { Blogs } from './components/blogs'
 // import {Popup} from './components/popup'
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
@@ -42,8 +41,7 @@ const App = () => {
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
-      <Photographers data={landingPageData.Services} />
-      <Blogs />
+      <Photographers data={landingPageData.Photographers} />
       <Gallery />
       <Testimonials data={landingPageData.Testimonials} />
       <Contact />
