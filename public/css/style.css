@@ -198,7 +198,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	position: relative;
 	width: 100%;
 	padding: 0;
-	background-color: #000000;
+	/* background-color: #000000; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -714,3 +714,4 @@ color: #777;
 #blogs .service-desc {
 	margin-bottom: 40px;
 }
+

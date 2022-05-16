@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Navigation } from './components/navigation'
-import { Header } from './components/header'
+import { Header } from './components/header/header'
 import { Features } from './components/features'
 import { About } from './components/about'
 import { Services } from './components/services'
@@ -10,6 +10,7 @@ import { Footer } from './components/footer'
 import {Contact} from './components/contact'
 import KnowMore    from './components/knowmore.jsx'
 import {Photographers} from './components/photographers'
+import { Blogs } from './components/blogs'
 // import {Popup} from './components/popup'
 import JsonData from './data/data.json'
 import SmoothScroll from 'smooth-scroll'
@@ -42,6 +43,7 @@ const App = () => {
       <Features data={landingPageData.Features} />
       <About data={landingPageData.About} />
       <Photographers data={landingPageData.Photographers} />
+      <Blogs />
       <Gallery />
       <Testimonials data={landingPageData.Testimonials} />
       <Contact />
