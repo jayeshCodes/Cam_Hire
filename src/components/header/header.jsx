@@ -1,4 +1,4 @@
-import shortVid from '../video/sky-vid.mp4'
+import shortVid from '../video/CamHire_vid.mp4'
 import "./header.css"
 
 export const Header = (props) => {

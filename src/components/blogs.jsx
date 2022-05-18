@@ -12,21 +12,18 @@ export const Blogs = (props) => {
             dapibus leonec.
           </p>
         </div>
-        <div className='row'>
-          <div className="col-md-6" data-aos='fade-up' data-aos-duration='1000'>
+        <div className='row'> 
+          {props.data
+            ? props.data.map((d, i) => (
+          <div key={`${d.title}-${i}`} className="col-md-6" data-aos='fade-up' data-aos-duration='1000'>
             <Card
-              title='Card Title'
-              imageUrl='https://images.pexels.com/photos/7598232/pexels-photo-7598232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-              body='Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. '
+              title={d.title}
+              imageUrl={d.imageUrl}
+              body={d.body}
             />
           </div>
-          <div className="col-md-6" data-aos='fade-up' data-aos-duration='1000'>
-            <Card
-              title='Card Title'
-              imageUrl='https://images.pexels.com/photos/7598232/pexels-photo-7598232.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-              body='Sed enim turpis, tempor sit amet libero quis, molestie sagittis massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. '
-            />
-          </div>
+))
+: 'loading'}
         </div>
       </div>
     </div>
